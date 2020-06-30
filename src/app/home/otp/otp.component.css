@@ -1,0 +1,8 @@
+.otp-wrapper {
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    height: 100%;
+  }

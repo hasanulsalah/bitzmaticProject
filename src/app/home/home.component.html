@@ -1,0 +1,40 @@
+<div class="login-wrapper">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Login</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form class="example-form">
+        <mat-form-field appearance="outline" class="area-code-wrapper">
+          <mat-select [(value)]="selected">
+            <mat-option value="+91">+91</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Phone Number</mat-label>
+          <input
+            matInput
+            placeholder="Please enter your phone number"
+            OnlyNumber="true"
+            maxlength="10"
+            name="phoneNumber"
+            [formControl]="phoneNumber"
+          />
+          <mat-icon matSuffix>phone</mat-icon>
+          <mat-error *ngIf="phoneNumber.hasError('minlength')">
+              Phone number should have 10 digits
+            </mat-error>
+            <mat-error *ngIf="phoneNumber.hasError('required')">
+              Phone is <strong>required</strong>
+            </mat-error>
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="basic" (click)="submitNumber()">
+        <mat-icon>login</mat-icon>
+        Submit
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

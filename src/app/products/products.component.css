@@ -1,0 +1,30 @@
+.image-size {
+  width: 100px;
+  height: 100px;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.search-wrapper {
+  margin-left: 40px;
+  margin-top: 25px;
+}
+td,
+th {
+  width: 250px;
+  margin-left: 30px;
+  padding: 15px;
+  text-align: center;
+}
+table,
+td,
+th {
+  border: 1px solid #e0e0e0;
+}
+table {
+  border-collapse: collapse;
+}
+td {
+  vertical-align: center;
+}

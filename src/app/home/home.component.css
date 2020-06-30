@@ -1,0 +1,13 @@
+.login-wrapper {
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.area-code-wrapper {
+  width: 80px;
+  margin: auto 5px;
+}
